@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Github Copilot Instructions
+# Copilot
+.copilot-commit-message-instructions.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
