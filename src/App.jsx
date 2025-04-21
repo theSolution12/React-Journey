@@ -6,12 +6,14 @@ import Greeting from "./components/Greeting";
 import ProductInfo from "./components/ProductInfo";
 import UserList from "./components/UserList";
 import ProductList from "./components/ProductList";
+import Product from "./components/Product";
+import Person from "./components/Person";
 
 const App = () => {
   return (
     <>
-      <UserList />
-      <ProductList />
+      <Person name="Arthur Morgan" age={30} />
+      <Product name="Laptop" price={1000} />
     </>
   )
 }
