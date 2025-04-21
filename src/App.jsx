@@ -6,14 +6,27 @@ import Greeting from "./components/Greeting";
 import ProductInfo from "./components/ProductInfo";
 import UserList from "./components/UserList";
 import ProductList from "./components/ProductList";
-import Product from "./components/Product";
-import Person from "./components/Person";
+import Product from "./components/props/Product";
+import Person from "./components/props/Person";
+import Weather from "./components/conditional rendering/Weather";
+import UserStatus from "./components/conditional rendering/UserStatus";
+import ConditionalGreeting from "./components/conditional rendering/Greeting";
 
 const App = () => {
   return (
     <>
-      <Person name="Arthur Morgan" age={30} />
-      <Product name="Laptop" price={1000} />
+      <Weather temperature={30} />
+      <Weather temperature={20} />
+      <Weather temperature={10} />
+
+      <UserStatus loggedIn={true} isAdmin={true} />
+      <UserStatus loggedIn={true} isAdmin={false} />
+      <UserStatus loggedIn={false} isAdmin={true} />
+
+      <ConditionalGreeting timeOfDay="morning" />
+      <ConditionalGreeting timeOfDay="afternoon" />
+      <ConditionalGreeting timeOfDay="evening" />
+      <ConditionalGreeting timeOfDay="night" />
     </>
   )
 }
