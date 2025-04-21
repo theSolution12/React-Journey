@@ -14,13 +14,14 @@ import ConditionalGreeting from "./components/conditional rendering/Greeting";
 import StyleCard from "./components/styling/StyleCard";
 import ProfileCard from "./components/styling/ProfileCard";
 import IconComponent from "./components/styling/IconComponent";
+import Button from "./components/eventHandling/Button";
+import Move from "./components/eventHandling/Move";
 
 const App = () => {
   return (
     <>
-      <StyleCard />
-      <ProfileCard />
-      <IconComponent />
+      <Button />
+      <Move />
     </>
   )
 }
