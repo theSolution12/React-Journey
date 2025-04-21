@@ -11,22 +11,16 @@ import Person from "./components/props/Person";
 import Weather from "./components/conditional rendering/Weather";
 import UserStatus from "./components/conditional rendering/UserStatus";
 import ConditionalGreeting from "./components/conditional rendering/Greeting";
+import StyleCard from "./components/styling/StyleCard";
+import ProfileCard from "./components/styling/ProfileCard";
+import IconComponent from "./components/styling/IconComponent";
 
 const App = () => {
   return (
     <>
-      <Weather temperature={30} />
-      <Weather temperature={20} />
-      <Weather temperature={10} />
-
-      <UserStatus loggedIn={true} isAdmin={true} />
-      <UserStatus loggedIn={true} isAdmin={false} />
-      <UserStatus loggedIn={false} isAdmin={true} />
-
-      <ConditionalGreeting timeOfDay="morning" />
-      <ConditionalGreeting timeOfDay="afternoon" />
-      <ConditionalGreeting timeOfDay="evening" />
-      <ConditionalGreeting timeOfDay="night" />
+      <StyleCard />
+      <ProfileCard />
+      <IconComponent />
     </>
   )
 }
