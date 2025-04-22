@@ -18,12 +18,12 @@ import Button from "./components/eventHandling/Button";
 import Move from "./components/eventHandling/Move";
 import Movies from "./components/useState/Movies";
 import Counter from "./components/useState/Counter";
+import TodoList from "./components/useState/TodoList";
 
 const App = () => {
   return (
     <>
-      <Movies />
-      <Counter />
+      <TodoList />
     </>
   )
 }
