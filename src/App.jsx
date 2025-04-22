@@ -16,12 +16,14 @@ import ProfileCard from "./components/styling/ProfileCard";
 import IconComponent from "./components/styling/IconComponent";
 import Button from "./components/eventHandling/Button";
 import Move from "./components/eventHandling/Move";
+import Movies from "./components/useState/Movies";
+import Counter from "./components/useState/Counter";
 
 const App = () => {
   return (
     <>
-      <Button />
-      <Move />
+      <Movies />
+      <Counter />
     </>
   )
 }
