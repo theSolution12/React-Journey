@@ -20,11 +20,12 @@ import Movies from "./components/useState/Movies";
 import Counter from "./components/useState/Counter";
 import TodoList from "./components/useState/TodoList";
 import Profile from "./components/useState/Profile";
+import ShoppingList from "./components/useState/ShoppingList";
 
 const App = () => {
   return (
     <>
-      <Profile />
+      <ShoppingList />
     </>
   )
 }
