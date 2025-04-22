@@ -25,7 +25,7 @@ import ShoppingList from "./components/useState/ShoppingList";
 const App = () => {
   return (
     <>
-      <ShoppingList />
+      
     </>
   )
 }
