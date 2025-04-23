@@ -21,11 +21,15 @@ import Counter from "./components/useState/Counter";
 import TodoList from "./components/useState/TodoList";
 import Profile from "./components/useState/Profile";
 import ShoppingList from "./components/useState/ShoppingList";
+import ToggleText from "./components/useState/Toggle";
+import ThemeToggle from "./components/useState/Theme";
+import TemporaryConverter from "./components/useState/TemperatureConverter";
+import Tabs from "./components/useState/Tab";
 
 const App = () => {
   return (
     <>
-      
+      <Tabs />
     </>
   )
 }
