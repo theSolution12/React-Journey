@@ -25,11 +25,12 @@ import ToggleText from "./components/useState/Toggle";
 import ThemeToggle from "./components/useState/Theme";
 import TemporaryConverter from "./components/useState/TemperatureConverter";
 import Tabs from "./components/useState/Tab";
+import Copy from "./components/portal/Copy";
 
 const App = () => {
   return (
     <>
-      <Tabs />
+      <Copy />
     </>
   )
 }
