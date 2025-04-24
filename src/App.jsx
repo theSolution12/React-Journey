@@ -31,12 +31,7 @@ import Card from "./components/props/Card";
 const App = () => {
   return (
     <div>
-      <Card>
-        <h1>MY card</h1>
-        <div>
-          this is a test para
-        </div>
-      </Card>
+      
     </div>
   )
 }
