@@ -26,12 +26,18 @@ import ThemeToggle from "./components/useState/Theme";
 import TemporaryConverter from "./components/useState/TemperatureConverter";
 import Tabs from "./components/useState/Tab";
 import Copy from "./components/portal/Copy";
+import Card from "./components/props/Card";
 
 const App = () => {
   return (
-    <>
-      <Copy />
-    </>
+    <div>
+      <Card>
+        <h1>MY card</h1>
+        <div>
+          this is a test para
+        </div>
+      </Card>
+    </div>
   )
 }
 
