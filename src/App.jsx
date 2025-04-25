@@ -34,9 +34,7 @@ import FetchDataEffect from "./components/useEffect/FetchDataEffect";
 const App = () => {
   return (
     <div>
-      <BasicEffect />
-      <CounterEffect />
-      <FetchDataEffect />
+      
     </div>
   )
 }
