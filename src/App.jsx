@@ -27,11 +27,14 @@ import TemporaryConverter from "./components/useState/TemperatureConverter";
 import Tabs from "./components/useState/Tab";
 import Copy from "./components/portal/Copy";
 import Card from "./components/props/Card";
+import BasicEffect from "./components/useEffect/basicEffect";
+import CounterEffect from "./components/useEffect/CounterEffect";
 
 const App = () => {
   return (
     <div>
-      
+      <BasicEffect />
+      <CounterEffect />
     </div>
   )
 }
