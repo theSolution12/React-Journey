@@ -29,12 +29,14 @@ import Copy from "./components/portal/Copy";
 import Card from "./components/props/Card";
 import BasicEffect from "./components/useEffect/basicEffect";
 import CounterEffect from "./components/useEffect/CounterEffect";
+import FetchDataEffect from "./components/useEffect/FetchDataEffect";
 
 const App = () => {
   return (
     <div>
       <BasicEffect />
       <CounterEffect />
+      <FetchDataEffect />
     </div>
   )
 }
