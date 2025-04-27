@@ -1,5 +1,7 @@
 //Before
 
+import Child from "./Child";
+
 const Parent = () => {
     return (
         <div>

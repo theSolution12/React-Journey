@@ -1,5 +1,7 @@
 //Before
 
+import Grandchild from "./Grandchild";
+
 const Child = ({ name }) => {
     return (
         <div>
