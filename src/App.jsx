@@ -30,11 +30,12 @@ import Card from "./components/props/Card";
 import BasicEffect from "./components/useEffect/basicEffect";
 import CounterEffect from "./components/useEffect/CounterEffect";
 import FetchDataEffect from "./components/useEffect/FetchDataEffect";
+import Parent from "./components/useContext/Parent";
 
 const App = () => {
   return (
     <div>
-      
+      <Parent />
     </div>
   )
 }
