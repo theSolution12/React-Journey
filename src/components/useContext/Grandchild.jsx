@@ -1,10 +1,16 @@
-//Before
+// After
 
-const Grandchild = ({ name }) => {
+import { Context } from "./Parent";
+
+const Grandchild = () => {
     return (
-        <div>
-            {name}
-        </div>
+        <Context.Consumer>
+            {name => (
+                <div>
+                    {name}
+                </div>
+            )}
+        </Context.Consumer>
     );
 }
 

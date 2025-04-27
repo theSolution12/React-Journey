@@ -1,11 +1,11 @@
-//Before
+// After
 
 import Grandchild from "./Grandchild";
 
-const Child = ({ name }) => {
+const Child = () => {
     return (
         <div>
-            <Grandchild name={name} />
+            <Grandchild />
         </div>
     )
 }

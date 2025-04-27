@@ -1,11 +1,16 @@
-//Before
+// After
 
 import Child from "./Child";
+import { createContext } from "react";
+
+export const Context = createContext();
 
 const Parent = () => {
     return (
         <div>
-            <Child name={"Arthur Morgan"} />
+            <Context.Provider value={"Arthur Morgan"}>
+                <Child />
+            </Context.Provider>
         </div>
     );
 }
