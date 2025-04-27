@@ -1,16 +1,14 @@
 // After
 
 import { Context } from "./Parent";
+import { useContext } from "react";
 
 const Grandchild = () => {
+
+    const name = useContext(Context);
+
     return (
-        <Context.Consumer>
-            {name => (
-                <div>
-                    {name}
-                </div>
-            )}
-        </Context.Consumer>
+        {name}
     );
 }
 
