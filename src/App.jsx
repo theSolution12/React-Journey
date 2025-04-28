@@ -31,11 +31,12 @@ import BasicEffect from "./components/useEffect/basicEffect";
 import CounterEffect from "./components/useEffect/CounterEffect";
 import FetchDataEffect from "./components/useEffect/FetchDataEffect";
 import Parent from "./components/useContext/Parent";
+import CounterReducer from "./components/useReducer/Counter";
 
 const App = () => {
   return (
     <div>
-      <Parent />
+      <CounterReducer />
     </div>
   )
 }
