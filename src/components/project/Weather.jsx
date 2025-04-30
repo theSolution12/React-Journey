@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useDebounce } from "../useDebounce";
+import { useDebounce } from "../useDebounce/Debounce";
 
 const Weather = () => {
     const key = import.meta.env.VITE_WEATHER_API_KEY;

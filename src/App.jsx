@@ -32,11 +32,12 @@ import CounterEffect from "./components/useEffect/CounterEffect";
 import FetchDataEffect from "./components/useEffect/FetchDataEffect";
 import Parent from "./components/useContext/Parent";
 import CounterReducer from "./components/useReducer/Counter";
+import WeatherAPI from "./components/project/Weather"
 
 const App = () => {
   return (
     <div>
-      <CounterReducer />
+      <WeatherAPI />
     </div>
   )
 }
