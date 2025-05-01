@@ -37,7 +37,7 @@ import WeatherAPI from "./components/project/Weather"
 const App = () => {
   return (
     <div>
-      <WeatherAPI />
+      <TodoList />
     </div>
   )
 }
