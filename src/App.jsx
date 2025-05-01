@@ -18,7 +18,7 @@ import Button from "./components/eventHandling/Button";
 import Move from "./components/eventHandling/Move";
 import Movies from "./components/useState/Movies";
 import Counter from "./components/useState/Counter";
-import TodoList from "./components/useState/TodoList";
+import TodoListState from "./components/useState/TodoList";
 import Profile from "./components/useState/Profile";
 import ShoppingList from "./components/useState/ShoppingList";
 import ToggleText from "./components/useState/Toggle";
@@ -33,6 +33,7 @@ import FetchDataEffect from "./components/useEffect/FetchDataEffect";
 import Parent from "./components/useContext/Parent";
 import CounterReducer from "./components/useReducer/Counter";
 import WeatherAPI from "./components/project/Weather"
+import TodoList from "./components/project/Todo-List";
 
 const App = () => {
   return (
