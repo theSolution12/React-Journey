@@ -1,13 +1,21 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
+  useEffect(() => {
+    if (localStorage.getItem("todos")) {
+      setTodos(JSON.parse(localStorage.getItem("todos")));
+    }
+  }, [])
+
   const handleAddTodo = () => {
     if (inputValue.trim()) {
       setTodos([...todos, inputValue]);
       setInputValue("");
+      localStorage.setItem("todos", JSON.stringify([...todos, inputValue]));
     }
   };
 
