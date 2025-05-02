@@ -34,11 +34,12 @@ import Parent from "./components/useContext/Parent";
 import CounterReducer from "./components/useReducer/Counter";
 import WeatherAPI from "./components/project/Weather"
 import TodoList from "./components/project/Todo-List";
+import Calculator from "./components/project/Calculator";
 
 const App = () => {
   return (
     <div>
-      <TodoList />
+      <Calculator />
     </div>
   )
 }
