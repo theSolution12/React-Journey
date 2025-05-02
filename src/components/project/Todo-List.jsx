@@ -9,13 +9,13 @@ const TodoList = () => {
     if (localStorage.getItem("todos")) {
       setTodos(JSON.parse(localStorage.getItem("todos")));
     }
-  }, [])
+  }, )
 
   const handleAddTodo = () => {
     if (inputValue.trim()) {
       setTodos([...todos, inputValue]);
       setInputValue("");
-      localStorage.setItem("todos", JSON.stringify([...todos, inputValue]));
+      localStorage.setItem("todos", JSON.stringify(todos));
     }
   };
 
