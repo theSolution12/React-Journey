@@ -15,7 +15,7 @@ const TodoList = () => {
     if (inputValue.trim()) {
       setTodos([...todos, inputValue]);
       setInputValue("");
-      localStorage.setItem("todos", JSON.stringify(todos));
+      localStorage.setItem("todos", JSON.stringify([...todos, inputValue]));
     }
   };
 
