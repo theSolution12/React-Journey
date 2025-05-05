@@ -37,11 +37,12 @@ import TodoList from "./components/project/Todo-List";
 import Calculator from "./components/project/Calculator";
 import ToggleBackground from "./components/project/ToggleBackground";
 import Qoutes from "./components/project/Qoutes";
+import Form from "./components/project/Form";
 
 const App = () => {
   return (
     <div>
-      <Qoutes />
+      <Form />
     </div>
   )
 }
