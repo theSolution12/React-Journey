@@ -39,11 +39,12 @@ import ToggleBackground from "./components/project/ToggleBackground";
 import Qoutes from "./components/project/Qoutes";
 import Form from "./components/project/Form";
 import QuizApp from "./components/project/Quiz";
+import DigitalClock from "./components/project/Clock";
 
 const App = () => {
   return (
     <div>
-      <QuizApp />
+      <DigitalClock />
     </div>
   )
 }
