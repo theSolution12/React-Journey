@@ -38,11 +38,12 @@ import Calculator from "./components/project/Calculator";
 import ToggleBackground from "./components/project/ToggleBackground";
 import Qoutes from "./components/project/Qoutes";
 import Form from "./components/project/Form";
+import QuizApp from "./components/project/Quiz";
 
 const App = () => {
   return (
     <div>
-      <Form />
+      <QuizApp />
     </div>
   )
 }
