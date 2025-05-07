@@ -40,11 +40,12 @@ import Qoutes from "./components/project/Qoutes";
 import Form from "./components/project/Form";
 import QuizApp from "./components/project/Quiz";
 import DigitalClock from "./components/project/Clock";
+import Blog from "./components/project/intermediate/Blog";
 
 const App = () => {
   return (
     <div>
-      <DigitalClock />
+      <Blog />
     </div>
   )
 }
