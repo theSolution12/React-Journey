@@ -30,6 +30,16 @@ const Blog = () => {
         setAuthor('');
     }
 
+    const editPost = (id) => {
+        const postToEdit = posts.find(post => post.id === id);
+        if (postToEdit) {
+            setTitle(postToEdit.title);
+            setContent(postToEdit.content);
+            setAuthor(postToEdit.author);
+            deletePost(id);
+        }
+    }
+
     const deletePost = (id) => {
         const updatedPosts = posts.filter(post => post.id !== id);
         setPosts(updatedPosts);
@@ -73,7 +83,8 @@ const Blog = () => {
                     <div key={post.id} className="border border-gray-300 rounded p-4 mb-2">
                         <h3 className="text-lg font-bold">{post.title}</h3>
                         <p>{post.content}</p>
-                        <p className="text-sm text-gray-500">By {post.author} on {post.date}</p>
+                        <p className="text-sm text-gray-500">~ {post.author} on {post.date}</p>
+                        <button onClick={() => editPost(post.id)} className="bg-green-500 hover:bg-green-600 text-white rounded-full px-4 py-2 mt-2 mr-2">Edit</button>
                         <button onClick={() => deletePost(post.id)} className="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-2 mt-2">Delete</button>
                     </div>
                 ))}
